@@ -1,5 +1,8 @@
 FROM ubuntu:24.04
 
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install devops tools
 RUN apt-get update && \
     apt-get install -y git ansible && \
@@ -8,7 +11,9 @@ RUN apt-get update && \
     git clone https://github.com/lpsouza/linux-installer.git && \
     cd linux-installer && \
     bash generate-inventory.sh && \
-    ansible-playbook playbooks/ubuntu/devops-tools.yaml && \
+    ansible-playbook \
+    playbooks/ubuntu/initial.yaml \
+    playbooks/ubuntu/devops-tools.yaml && \
     cd .. && \
     rm -rf linux-installer && \
     apt-get clean && \
