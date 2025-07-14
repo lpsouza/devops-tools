@@ -20,5 +20,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Configure VS Code compatibility (devcontainer)
-RUN useradd -m -s /bin/bash vscode && \
+RUN useradd -u 1000 -m -s /bin/bash vscode && \
     echo "vscode ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
