@@ -45,5 +45,16 @@ jobs:
                   # platforms: "linux/amd64, linux/arm64"
                   platforms: "linux/amd64"
                   context: .
+                  file: Dockerfile
                   push: true
                   tags: "lpsouza/devops-tools:latest"
+
+            - name: Build and push Docker image (devcontainer)
+              uses: docker/build-push-action@v3
+              with:
+                  # platforms: "linux/amd64, linux/arm64"
+                  platforms: "linux/amd64"
+                  context: .
+                  file: Dockerfile-devcontainer
+                  push: true
+                  tags: "lpsouza/devops-tools:devcontainer"
