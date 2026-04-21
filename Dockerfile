@@ -14,6 +14,7 @@ RUN apt-get update && \
     ansible-playbook \
     playbooks/ubuntu/initial.yaml \
     playbooks/ubuntu/devops-tools.yaml && \
+    playbooks/ubuntu/cli.yaml --tags onepassword_cli && \
     cd .. && \
     rm -rf linux-installer && \
     apt-get clean && \
