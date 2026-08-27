@@ -23,7 +23,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     cd /tmp && \
     git clone --depth 1 https://github.com/lpsouza/linux-installer.git && \
     cd linux-installer && \
-    bash generate-inventory.sh && \
+    printf "[linux]\nlocalhost ansible_connection=local\n\n[linux:vars]\nansible_user=root\nansible_become_user=root\nansible_become_method=sudo\nansible_shell_executable=/bin/bash\n" > inventory && \
     ansible-playbook -c local \
     playbooks/ubuntu/initial.yaml \
     playbooks/ubuntu/devops-tools.yaml && \
