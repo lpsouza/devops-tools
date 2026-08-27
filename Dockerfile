@@ -11,7 +11,8 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     apt-get install -y --no-install-recommends \
     git \
     ansible \
-    ca-certificates && \
+    ca-certificates \
+    sshpass && \
     apt-get clean
 
 # Install Ansible collections separately to cache them
