@@ -1,8 +1,11 @@
-# devops-tools
+# DevOps Tools
 
-The purpose of this repository is to provide a set of tools and scripts that can be used to automate various DevOps tasks. The tools are designed to be easy to use and can be integrated into existing workflows.
+The purpose of this repository is to provide a portable and optimized container image with essential tools for DevOps workflows, infrastructure management, and development containers.
 
 ## Features
 
-- **Ansible**: A configuration management tool that can be used to automate the deployment and management of applications and infrastructure.
-- **Terraform**: An infrastructure as code tool that can be used to provision and manage cloud resources.
+* **Ansible**: Configuration management and automation tool (`ansible-core` + `amazon.aws` collection).
+* **Terraform**: Infrastructure as Code (IaC) tool to provision cloud resources.
+* **AWS CLI v2**: Official command line interface for Amazon Web Services.
+* **1Password CLI (`op`)**: Command-line tool to manage secrets and credentials securely.
+* **Essential Utilities**: `git`, `jq`, `curl`, `unzip`, `openssh-client`, and `sshpass`.
