@@ -20,6 +20,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
         openssh-client \
         sshpass \
         gnupg \
+        cloud-image-utils \
         python3 \
         python3-pip \
         python3-boto3 \
