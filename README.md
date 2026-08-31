@@ -9,4 +9,4 @@ The purpose of this repository is to provide a portable and optimized container 
 * **AWS CLI v2**: Official command line interface for Amazon Web Services.
 * **1Password CLI (`op`)**: Command-line tool to manage secrets and credentials securely.
 * **Cloud & Image Utilities**: `cloud-image-utils` (includes `cloud-localds`, `genisoimage` / `mkisofs`, `qemu-utils`).
-* **Essential Utilities**: `git`, `jq`, `curl`, `unzip`, `openssh-client`, and `sshpass`.
+* **Essential Utilities**: `git`, `jq`, `curl`, `unzip`, `openssh-client`, `sshpass`, and `xsltproc`.

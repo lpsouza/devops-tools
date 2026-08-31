@@ -26,6 +26,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
         python3-boto3 \
         python3-botocore \
         python3-yaml \
+        xsltproc \
         ansible && \
     rm -rf /var/lib/apt/lists/*
 
