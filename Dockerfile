@@ -59,8 +59,12 @@ RUN case "${TARGETARCH}" in \
     /tmp/aws/install && \
     rm -rf /tmp/aws /tmp/awscliv2.zip
 
-# Set default working directory
+# Set default working directory and switch to non-root user
+RUN mkdir -p /workspace && chown -R ubuntu:ubuntu /workspace
+
 WORKDIR /workspace
+
+USER ubuntu
 
 CMD ["/bin/bash"]
 
