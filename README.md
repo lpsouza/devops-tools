@@ -7,6 +7,7 @@ The purpose of this repository is to provide a portable and optimized container 
 * **Ansible**: Configuration management and automation tool (`ansible-core` + `amazon.aws` collection).
 * **Terraform**: Infrastructure as Code (IaC) tool to provision cloud resources.
 * **AWS CLI v2**: Official command line interface for Amazon Web Services.
+* **Azure CLI**: Official command-line interface for Microsoft Azure.
 * **1Password CLI (`op`)**: Command-line tool to manage secrets and credentials securely.
 * **Cloud & Image Utilities**: `cloud-image-utils` (includes `cloud-localds`, `genisoimage` / `mkisofs`, `qemu-utils`).
 * **Essential Utilities**: `git`, `jq`, `curl`, `unzip`, `openssh-client`, `sshpass`, and `xsltproc`.
